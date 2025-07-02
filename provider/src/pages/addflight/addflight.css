@@ -1,0 +1,70 @@
+.add-flight-container {
+    width: 100%;
+    padding: 40px;
+    background-color: #0d0d1e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+    font-size: 32px;
+    color: #00adb5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.flight-form {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background-color: #2a2a3e;
+    color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #00adb5;
+}
+
+.submit-btn {
+    grid-column: span 2;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
