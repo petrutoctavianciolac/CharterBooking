@@ -1,0 +1,141 @@
+.dashboard-container {
+  padding: 40px 20px;
+  background-color: #0f0f1f;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-form {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-form h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.trip-type-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.trip-type-tabs button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #393e46;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trip-type-tabs .active {
+  background-color: #00adb5;
+}
+
+.form-fields-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.form-row {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.search-form input,
+.search-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #1a1a2e;
+  transition: all 0.3s ease;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #00adb5;
+}
+
+.search-btn {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #00adb5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.search-btn:hover {
+  background-color: #00c8d6;
+  transform: scale(1.02);
+}
+
+.error-message,
+.info-message {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #ff1a1a;
+}
+
+.info-message {
+  color: #00adb5;
+}
+
+.flight-results-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.go-flights-column,
+.return-flights-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #1f2235;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.flight-card:hover {
+  transform: scale(1.02);
+}

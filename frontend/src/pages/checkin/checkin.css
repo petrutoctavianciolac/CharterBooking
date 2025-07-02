@@ -1,0 +1,83 @@
+.checkin-container {
+  padding: 40px 20px;
+  background-color: #0f0f1f;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.checkin-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #00adb5;
+  margin-bottom: 10px;
+}
+
+.passenger-form {
+  background-color: #1a1a2e;
+  border: 1px solid #2f2f3e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px; /* se redimensionează dacă spațiul nu ajunge */
+  min-width: 180px;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #1a1a2e;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #00adb5;
+}
+
+
+.submit-checkin-btn {
+  padding: 12px;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-checkin-btn:hover {
+  background-color: #00c8d6;
+  transform: scale(1.02);
+}
+
+.error-message {
+  color: #ff1a1a;
+}

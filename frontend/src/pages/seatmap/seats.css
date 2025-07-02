@@ -1,0 +1,132 @@
+.seatmap-container {
+  padding: 40px 20px;
+  background-color: #0f0f1f;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.seatmap-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.seats-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.seat-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.business-class {
+  margin-bottom: 30px; 
+}
+
+.aisle {
+  width: 40px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #2e2e3a;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.seat.available:hover {
+  background-color: #00adb5;
+  transform: scale(1.05);
+}
+
+.seat.booked {
+    background-color: #5a5a5a;
+    border-color: #444;
+  cursor: not-allowed;
+}
+
+.seat.reserved-by-user {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #388E3C;
+}
+
+
+.error-message {
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+.seat-selection-summary {
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  background: black;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+.seat.selected {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.seat-selection-summary button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.seat-selection-summary button:hover {
+  background-color: #00c8d6;
+}
+
+.reserve-button {
+  padding: 12px 24px;
+  background-color: #1e40af; /* albastru elegant */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+.reserve-button:hover {
+  background-color: #1d4ed8; /* mai deschis la hover */
+  transform: scale(1.03);
+}
+
+.reserve-button:disabled {
+  background-color: #4b5563; /* gri când e dezactivat */
+  cursor: not-allowed;
+  transform: none;
+}
+
